@@ -72,8 +72,8 @@ async def service_menu(
 
     image= InputMediaPhoto(
         media=service.image,
-        caption=f'<strong>{service.name}</strong>\
-        \n{service.description}\n\nСтоимость: {round(service.price,2)}\
+        caption=f'🚩<strong>{service.name}</strong>\
+        \n{service.description}\n\n💸Стоимость: <i>{round(service.price,2)}</i>\
         \n\n<strong>{centered_text}</strong>',parse_mode='html'
     )
 
