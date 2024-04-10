@@ -1,5 +1,5 @@
 from aiogram import Bot, types
-from aiogram.dispatcher.filters import Filter
+from aiogram.filters import Filter
 
 class ChatTypeFilter(Filter):
     def __init__(self, chat_types: list[str]) -> None:
