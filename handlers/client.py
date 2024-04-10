@@ -9,7 +9,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from database.models import Service, Barbers
 from database.query import orm_get_items, orm_get_single_item, orm_get_banner, orm_add_order
 from handlers.customer_processing import get_client_content
-from keyboards.calendar_inline import get_inline_calendar
+
 from functions.send_sms import sending_sms
 from functions.google_calendar import send_upcomming_events
 from keyboards.client_kb_markup import send_contact
