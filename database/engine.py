@@ -6,7 +6,7 @@ from database.models import Base
 
 #DB_URL='postgresql+asyncpg://postgres:Ui235GAj8883@localhost:5432/BarberShop'
 #DB_URL='postgresql+asyncpg://Barber_shop:19022005@localhost:5432/BarberShop1'
-engine = create_async_engine(DATABASE_URL)
+engine = create_async_engine("postgresql://postgres:KYKmpvRlhSzIYADksfyKxrLAumIoeJMm@postgres.railway.internal:5432/railway")
 
 session_maker = async_sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
